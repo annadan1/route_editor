@@ -1,0 +1,40 @@
+.point {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.point:hover{
+  cursor: pointer;
+}
+
+.deletePoint {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.deleteAllPoints {
+  height: 30px;
+  color: #000;
+  width: 100%;
+}
+
+.reorderGroup {
+  overflow-y: overlay;
+  scroll-behavior: smooth;
+  height: 80%;
+  scrollbar-width: none;
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.reorderGroup::-webkit-scrollbar {
+  display: none;
+}
+.reorderGroup {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
