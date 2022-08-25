@@ -47,6 +47,7 @@ test.describe('drag and drop', () => {
     await firstPoint.hover();
     await page.mouse.down();
     const box = await secondPoint.boundingBox();
+    // @ts-ignore
     await page.mouse.move(box.x + box.width / 3, box.y + box.height / 3);
     await secondPoint.hover();
     await page.mouse.up();
